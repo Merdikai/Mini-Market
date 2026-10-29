@@ -44,3 +44,4 @@
 # Commit 44 : 2026-10-29T21:04:29.7409200+03:00 - feat(preloader): prepare Ora liquid progress indicator asset pipeline
 # Commit 45 : 2026-10-29T21:04:30.5332701+03:00 - docs(changelog): initialize v2.4.0 changelog with full feature manifest
 # Commit 46 : 2026-10-29T21:04:31.3531394+03:00 - perf(canvas): minimize repaint boundaries on lattice glow background
+# Commit 47 : 2026-10-29T21:04:32.2113087+03:00 - style(inputs): polish focused border glow on promo code textfield
