@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/store_provider.dart';
 import 'screens/home_screen.dart';
+import 'theme/app_theme.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     ChangeNotifierProvider(
       create: (_) => StoreProvider(),
@@ -20,11 +22,7 @@ class MiniMarketApp extends StatelessWidget {
     return MaterialApp(
       title: 'Mini Market',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
-        appBarTheme: const AppBarTheme(elevation: 0),
-      ),
+      theme: AppTheme.luxuryDarkTheme,
       home: const HomeScreen(),
     );
   }
