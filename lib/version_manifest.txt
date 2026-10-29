@@ -60,3 +60,4 @@
 # Commit 60 : 2026-10-29T21:04:42.1411115+03:00 - feat(filters): add multi-attribute sort by valuation and popularity
 # Commit 61 : 2026-10-29T21:04:42.8086633+03:00 - style(snackbar): customize frosted dark snackbar with emerald icons
 # Commit 62 : 2026-10-29T21:04:43.4768162+03:00 - test(smoke): add end-to-end user navigation smoke test
+# Commit 63 : 2026-10-29T21:04:44.2240591+03:00 - refactor(specs): calibrate water resistance and movement parameters
