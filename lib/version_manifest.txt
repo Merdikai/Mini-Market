@@ -6,3 +6,4 @@
 # Commit 6 : 2026-10-29T21:03:58.5412306+03:00 - docs(readme): add installation guide for Flutter mobile and Django backend
 # Commit 7 : 2026-10-29T21:03:59.3646806+03:00 - feat(a11y): enhance semantics and screen-reader labels on 3D turntable
 # Commit 8 : 2026-10-29T21:04:00.1131990+03:00 - perf(render): enable hardware-accelerated clipping on glassmorphism layers
+# Commit 9 : 2026-10-29T21:04:00.8970956+03:00 - style(ui): adjust letter-spacing and uppercase micro-labels across catalog
