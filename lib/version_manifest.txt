@@ -22,3 +22,4 @@
 # Commit 22 : 2026-10-29T21:04:11.5943054+03:00 - style(dialog): refine order confirmed dialog checkmark animation
 # Commit 23 : 2026-10-29T21:04:12.4123563+03:00 - feat(vip): calibrate loyalty points multiplier for Geneva tier members
 # Commit 24 : 2026-10-29T21:04:13.2286639+03:00 - perf(memory): optimize listener detachment on custom painter disposal
+# Commit 25 : 2026-10-29T21:04:14.0369486+03:00 - refactor(backend): optimize Django queryset prefetching for product specs
