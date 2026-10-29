@@ -30,3 +30,4 @@
 # Commit 30 : 2026-10-29T21:04:18.2782467+03:00 - test(backend): verify order creation and dispatch status updates
 # Commit 31 : 2026-10-29T21:04:19.0751781+03:00 - ci(frontend): enforce zero warnings policy in flutter analyze step
 # Commit 32 : 2026-10-29T21:04:19.9198273+03:00 - ci(backend): enforce clean migration status and flake8 compliance
+# Commit 33 : 2026-10-29T21:04:20.7640847+03:00 - docs(deploy): add deployment guide for Google Cloud Run and mobile store
