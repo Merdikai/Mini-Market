@@ -25,3 +25,4 @@
 # Commit 25 : 2026-10-29T21:04:14.0369486+03:00 - refactor(backend): optimize Django queryset prefetching for product specs
 # Commit 26 : 2026-10-29T21:04:14.8277358+03:00 - test(backend): verify category filter query parameter handling
 # Commit 27 : 2026-10-29T21:04:15.6639862+03:00 - test(backend): verify product search by title and description keywords
+# Commit 28 : 2026-10-29T21:04:16.4879600+03:00 - test(backend): verify user profile retrieval and default VIP tier
