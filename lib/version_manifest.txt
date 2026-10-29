@@ -10,3 +10,4 @@
 # Commit 10 : 2026-10-29T21:04:01.6786619+03:00 - refactor(checkout): streamline flippable 3D credit card animation timing
 # Commit 11 : 2026-10-29T21:04:02.5186233+03:00 - feat(cart): add tactile haptic feedback simulation on item addition
 # Commit 12 : 2026-10-29T21:04:03.3446957+03:00 - style(product): polish elevation shadows and ambient aura gradients
+# Commit 13 : 2026-10-29T21:04:04.1913414+03:00 - docs(api): document Django REST framework endpoints and query parameters
