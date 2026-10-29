@@ -57,3 +57,4 @@
 # Commit 57 : 2026-10-29T21:04:40.0510482+03:00 - perf(assets): verify SVG and vector icon tree-shaking efficiency
 # Commit 58 : 2026-10-29T21:04:40.7401190+03:00 - style(scaffold): set transparent system overlay status bar style
 # Commit 59 : 2026-10-29T21:04:41.4418554+03:00 - refactor(home): streamline daily drop timer countdown formatter
+# Commit 60 : 2026-10-29T21:04:42.1411115+03:00 - feat(filters): add multi-attribute sort by valuation and popularity
