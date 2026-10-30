@@ -46,42 +46,48 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                width: 8,
-                                height: 8,
-                                decoration: const BoxDecoration(
-                                  color: AppColors.neonCyan,
-                                  shape: BoxShape.circle,
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  width: 8,
+                                  height: 8,
+                                  decoration: const BoxDecoration(
+                                    color: AppColors.neonCyan,
+                                    shape: BoxShape.circle,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 8),
-                              const Text(
-                                'MINI MARKET',
-                                style: TextStyle(
-                                  color: AppColors.textPrimary,
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 2.0,
+                                const SizedBox(width: 8),
+                                const Flexible(
+                                  child: Text(
+                                    'MINI MARKET',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      color: AppColors.textPrimary,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: 1.5,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 2),
-                          const Text(
-                            'ARTEFAKT & ORA EDITION',
-                            style: TextStyle(
-                              color: AppColors.textMuted,
-                              fontSize: 10,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 1.5,
+                              ],
                             ),
-                          ),
-                        ],
+                            const SizedBox(height: 2),
+                            const Text(
+                              'ARTEFAKT & ORA EDITION',
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                color: AppColors.textMuted,
+                                fontSize: 9,
+                                fontWeight: FontWeight.w700,
+                                letterSpacing: 1.2,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       Row(
                         children: [
@@ -215,32 +221,37 @@ class _HomeScreenState extends State<HomeScreen> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                                    decoration: BoxDecoration(
-                                      color: AppColors.champagneGold.withValues(alpha: 0.15),
-                                      borderRadius: BorderRadius.circular(8),
-                                      border: Border.all(
-                                        color: AppColors.champagneGold.withValues(alpha: 0.4),
-                                        width: 1,
+                                  Flexible(
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                      decoration: BoxDecoration(
+                                        color: AppColors.champagneGold.withValues(alpha: 0.15),
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(
+                                          color: AppColors.champagneGold.withValues(alpha: 0.4),
+                                          width: 1,
+                                        ),
                                       ),
-                                    ),
-                                    child: const Text(
-                                      'ORA MASTERPIECE DROP',
-                                      style: TextStyle(
-                                        color: AppColors.champagneGold,
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w800,
-                                        letterSpacing: 1.2,
+                                      child: const Text(
+                                        'ORA MASTERPIECE',
+                                        overflow: TextOverflow.ellipsis,
+                                        style: TextStyle(
+                                          color: AppColors.champagneGold,
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w800,
+                                          letterSpacing: 1.0,
+                                        ),
                                       ),
                                     ),
                                   ),
-                                  Row(
+                                  const SizedBox(width: 8),
+                                  const Row(
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      const Icon(Icons.timer_outlined, size: 14, color: AppColors.neonCyan),
-                                      const SizedBox(width: 4),
-                                      const Text(
-                                        '03:42:19 REMAINING',
+                                      Icon(Icons.timer_outlined, size: 13, color: AppColors.neonCyan),
+                                      SizedBox(width: 4),
+                                      Text(
+                                        '03:42:19',
                                         style: TextStyle(
                                           color: AppColors.neonCyan,
                                           fontSize: 11,
