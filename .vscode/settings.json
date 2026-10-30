@@ -1,0 +1,7 @@
+{
+  "gradle.server.enabled": false,
+  "gradle.languageServer.enabled": false,
+  "gradle.enableBuildServer": false,
+  "gradle.autoDetect": "off",
+  "gradle.nestedProjects": false
+}
