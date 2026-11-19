@@ -27,3 +27,4 @@ class ProductViewSet(viewsets.ModelViewSet):
         if daily_drop == 'true':
             qs = qs.filter(is_daily_drop=True)
         return qs
+

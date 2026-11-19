@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/store_provider.dart';
-import 'screens/home_screen.dart';
+import 'screens/main_navigation_hub.dart';
 import 'theme/app_theme.dart';
-import 'widgets/iphone_frame.dart';
+import 'widgets/responsive_shell.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,15 +20,16 @@ class MiniMarketApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final store = context.watch<StoreProvider>();
+
     return MaterialApp(
-      title: 'Mini Market — iPhone 16 Pro',
+      title: 'Mini Market Retail Enterprise',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.luxuryDarkTheme,
-      home: const Scaffold(
-        backgroundColor: Colors.black,
-        body: IPhoneDeviceFrame(
-          child: HomeScreen(),
-        ),
+      theme: AppTheme.executiveLightTheme,
+      darkTheme: AppTheme.luxuryDarkTheme,
+      themeMode: store.settings.isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      home: const ResponsiveShell(
+        child: MainNavigationHub(),
       ),
     );
   }

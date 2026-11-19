@@ -47,3 +47,4 @@ class ProductReview(TimeStampedModel):
 
     def __str__(self):
         return f"Review by {self.author} on {self.product.title}"
+

@@ -32,3 +32,4 @@ class ProductSerializer(serializers.ModelSerializer):
             'review_count', 'is_featured', 'is_daily_drop', 'stock',
             'badge', 'specs', 'reviews', 'created_at'
         ]
+

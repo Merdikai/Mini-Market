@@ -202,15 +202,15 @@ class ProfileScreen extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                               decoration: BoxDecoration(
-                                color: order.status == 'Delivered'
+                                color: order.status.name == 'completed'
                                     ? AppColors.cyberEmerald.withValues(alpha: 0.15)
                                     : AppColors.neonCyan.withValues(alpha: 0.15),
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child: Text(
-                                order.status.toUpperCase(),
+                                order.status.displayName.toUpperCase(),
                                 style: TextStyle(
-                                  color: order.status == 'Delivered'
+                                  color: order.status.name == 'completed'
                                       ? AppColors.cyberEmerald
                                       : AppColors.neonCyan,
                                   fontSize: 10,
@@ -286,3 +286,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+

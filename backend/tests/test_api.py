@@ -32,3 +32,4 @@ class MiniMarketAPITests(TestCase):
         response = self.client.get(reverse('current_user'))
         self.assertEqual(response.status_code, 200)
         self.assertIn('profile', response.data)
+

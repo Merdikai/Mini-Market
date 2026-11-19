@@ -21,3 +21,4 @@ class CurrentUserView(APIView):
         profile, _ = UserProfile.objects.get_or_create(user=user)
         serializer = UserSerializer(user)
         return Response(serializer.data)
+

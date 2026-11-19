@@ -9,3 +9,4 @@ router.register(r'items', ProductViewSet)
 urlpatterns = [
     path('', include(router.urls)),
 ]
+

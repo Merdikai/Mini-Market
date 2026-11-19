@@ -18,3 +18,4 @@ class OrderSerializer(serializers.ModelSerializer):
             'id', 'order_number', 'status', 'total_amount',
             'shipping_address', 'dispatch_tier', 'items', 'created_at'
         ]
+

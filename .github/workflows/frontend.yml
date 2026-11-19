@@ -35,3 +35,4 @@ jobs:
 
       - name: Run Flutter Widget & Unit Tests
         run: flutter test --no-pub
+

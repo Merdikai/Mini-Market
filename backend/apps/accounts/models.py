@@ -11,3 +11,4 @@ class UserProfile(TimeStampedModel):
 
     def __str__(self):
         return f"{self.user.username} ({self.vip_tier})"
+

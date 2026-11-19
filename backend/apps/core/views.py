@@ -9,3 +9,4 @@ class HealthCheckView(APIView):
             'platform': 'Mini Market API (Ora & Artefakt)',
             'version': '1.0.0'
         }, status=status.HTTP_200_OK)
+
