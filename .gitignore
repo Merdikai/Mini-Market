@@ -1,48 +1,188 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# =====================================================================
+# MINI MARKET — ENTERPRISE .GITIGNORE (PUBLIC REPOSITORY SECURITY SAFEGUARD)
+# =====================================================================
 
-# IntelliJ related
+# ---------------------------------------------------------------------
+# 1. SECRETS, CREDENTIALS & SENSITIVE ENVIRONMENT VARIABLES
+# ---------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.cert
+*.crt
+*.p12
+*.pfx
+secrets.json
+client_secrets.json
+
+# Android Signing Keys & Credentials
+*.keystore
+*.jks
+key.properties
+**/android/key.properties
+**/android/app/key.properties
+local.properties
+**/android/local.properties
+
+# Google Services & Firebase Credentials
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# ---------------------------------------------------------------------
+# 2. PYTHON & DJANGO BACKEND ARTIFACTS
+# ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django Databases & Backups (CRITICAL FOR PUBLIC REPOSITORIES)
+*.sqlite3
+*.sqlite3-journal
+*.db
+*.db-journal
+db.sqlite3
+db.sqlite3-journal
+backend/db.sqlite3
+backend/db.sqlite3-journal
+*.dump
+*.sql
+*.sql.gz
+
+# Django Media Uploads & Static Cache
+media/
+backend/media/
+staticfiles/
+backend/static_root/
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ---------------------------------------------------------------------
+# 3. FLUTTER & DART COMPILED ARTIFACTS & CACHES
+# ---------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+**/build/
+/coverage/
+
+# Symbolication & Maps
+app.*.symbols
+app.*.map.json
+*.dill
+*.dill.track.dill
+
+# Flutter Documentation
+**/doc/api/
+
+# ---------------------------------------------------------------------
+# 4. NATIVE PLATFORM ARTIFACTS (ANDROID, IOS, DESKTOP)
+# ---------------------------------------------------------------------
+# Android
+**/android/.gradle/
+**/android/captures/
+**/android/gradle/wrapper/gradle-wrapper.jar
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# iOS
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+**/ios/Pods/
+**/ios/.symlinks/
+
+# macOS / Windows / Linux Native Builds
+**/macos/Flutter/ephemeral/
+**/windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+
+# ---------------------------------------------------------------------
+# 5. IDE, EDITORS & OS METADATA
+# ---------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# JetBrains / IntelliJ
 *.iml
 *.ipr
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# Visual Studio Code (Allow settings, ignore user state)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.log
+*.bak
+*.swp
+*.swo
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-
-# Widget Preview related
-.widget_preview/
+# Temporary Script Files
+scratch/
+tmp/
+*.tmp
